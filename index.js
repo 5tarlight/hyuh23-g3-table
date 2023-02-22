@@ -490,7 +490,29 @@ const fixed = [
   },
 ];
 
-const gen = () => {};
+const parseCode = (code) => {};
+
+const gen = () => {
+  let timetable = fixed[room - 1];
+  timetable = [
+    timetable.mon,
+    timetable.tue,
+    timetable.wed,
+    timetable.thu,
+    timetable.fri,
+  ];
+
+  for (let i = 0; i < timetable.length; i++) {
+    for (let j = 0; j < timetable[i].length; j++) {
+      if (timetable[i][j] === "math") {
+      } else if (lables.includes(timetable[i][j])) {
+        timetable[i][j] = {
+          name: parseCode(select[timetable[i][j]]),
+        };
+      }
+    }
+  }
+};
 
 const init = () => {
   console.log("Collecting data...");
