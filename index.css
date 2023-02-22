@@ -40,6 +40,8 @@ h2 {
 .info-content {
   display: flex;
   justify-content: left;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .info-content > div {
