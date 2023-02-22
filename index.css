@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.content {
+  max-width: 512px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info {
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+a {
+  color: inherit;
+}
+
+.author {
+  text-align: right;
+  font-style: italic;
+  color: rgb(104, 104, 104);
+  font-size: 0.95rem;
+}
+
+h2 {
+  margin: 3rem 0;
+  margin-bottom: 1rem;
+}
+
+.class-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-content {
+  display: flex;
+  justify-content: left;
+}
+
+.info-content > div {
+  margin-right: 1rem;
+}

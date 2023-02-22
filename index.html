@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
     <title>HYUH 23 Timetable Generator</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="content">
+      <h1>2023 한대부고 고3 시간표 생성기</h1>
+      <div class="desc">
+        이동수업 <code>시간표는 한양통>출결관리>시간표</code>에서 확인할 수
+        있습니다.
+      </div>
+      <div class="info">
+        <div class="github"></div>
+        <div class="author">
+          Dev by 30501(20601) 김규산 (<a
+            href="https://github.com/5tarlight/hyuh23-g3-table"
+            >Github</a
+          >)
+        </div>
+      </div>
+
+      <h2>정보</h2>
+      <div class="class-info">
+        <div class="info-content">
+          <div>
+            <label for="class">반</label>
+            <select name="class" id="class">
+              <option value="1">1반</option>
+              <option value="2">2반</option>
+              <option value="3">3반</option>
+              <option value="4">4반</option>
+              <option value="5">5반</option>
+              <option value="6">6반</option>
+              <option value="7">7반</option>
+              <option value="8">8반</option>
+              <option value="9">9반</option>
+              <option value="10">10반</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="affil">계열</label>
+            <select name="affil" id="affil">
+              <option value="ee">이과</option>
+              <option value="mun">문과</option>
+            </select>
+          </div>
+          <div>
+            <label for="math">수학</label>
+            <select name="math" id="math">
+              <option value="calculus">미적분</option>
+              <option value="stats">확률과 통계</option>
+            </select>
+          </div>
+        </div>
+        <div class=""></div>
+      </div>
+    </div>
   </body>
 </html>
